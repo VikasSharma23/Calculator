@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Calculator</title>
+		<script src="calculator.js" defer></script>
+		<style>
+	/*div
+	{
+		border: 1px solid black;
+	}*/
+		body
+		{
+			display: flex;
+			justify-content: center;
+			background-image: url('download1.jpg');
+			background-repeat: no-repeat;
+			background-size: 100%;
+		}
+		#container
+		{
+			display: flex;
+			height: 400px;
+			width: 400px;
+			/*margin-left: 500px;*/
+			margin-top: 130px;
+			align-items: center;
+			flex-direction: column;
+			padding-top: 10px;
+			background-color: #99777700;
+		}
+		#display
+		{
+			padding-top: 2px;
+			padding-left: 2px;
+			width: 350px;
+			height: 47px;
+			font-size: 35px;
+			border: solid lightslategray;
+			border-radius: 10px;
+			background-color: whitesmoke;
+		}
+		#item-buttons
+		{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			height: 320px;
+			width: 370px;
+			padding-bottom: 20px;
+		}
+		#item-buttons-row-1
+		{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-evenly;
+			width: 380px;
+			height: 60px;
+		}
+		#item-buttons-row-2
+		{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-evenly;
+			width: 380px;
+			height: 60px;
+		}
+		#item-buttons-row-3
+		{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-evenly;
+			width: 380px;
+			height: 60px;
+		}
+		#item-buttons-row-4
+		{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-evenly;
+			width: 380px;
+			height: 60px;
+		}
+		#item-buttons-row-5
+		{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-evenly;
+			width: 380px;
+			height: 60px;
+		}
+		button
+		{
+			height: 55px;
+			width: 80px;border: none;
+			font-size: 24px;
+			background-color: black;
+			color: white;
+			transition-duration: 0.2s;
+  			cursor: pointer;
+		}
+		button:hover
+		{
+			background-color: cadetblue;
+		}
+		@media (max-width: 1500px)
+		{
+  			#item-display, #item-buttons
+  			{
+    			flex: 100%;
+    		}
+ 		}
+}
+</style>
+</head>
+<body>
+<div id="container">
+	<div id="item-display">
+		<!-- <div id="display"></div> -->
+		<input type="text" name="display" id="display" value="">
+	</div>
+	<div id="item-buttons">
+		<div id="item-buttons-row-1">
+			<div><button id="btnPluse">+</button></div>
+			<div><button id="btnMin">-</button></div>
+			<div><button id="btnMul">*</button></div>
+			<div><button id="btnDiv">/</button></div>
+		</div>
+		<div id="item-buttons-row-2">
+			<div><button id="btn7">7</button></div>
+			<div><button id="btn8">8</button></div>
+			<div><button id="btn9">9</button></div>
+			<div><button id="btnPer">%</button></div>
+		</div>
+		<div id="item-buttons-row-3">
+			<div><button id="btn4">4</button></div>
+			<div><button id="btn5">5</button></div>
+			<div><button id="btn6">6</button></div>
+			<div><button id="btnAnd">&&</button></div>
+		</div>
+		<div id="item-buttons-row-4">
+			<div><button id="btn1">1</button></div>
+			<div><button id="btn2">2</button></div>
+			<div><button id="btn3">3</button></div>
+			<div><button id="btnOr">||</button></div>
+		</div>
+		<div id="item-buttons-row-5">
+			<div><button id="btn0">0</button></div>
+			<div><button id="btnDot">.</button></div>
+			<div><button id="btnC">C</button></div>
+			<div><button id="btnEqual">=</button></div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
